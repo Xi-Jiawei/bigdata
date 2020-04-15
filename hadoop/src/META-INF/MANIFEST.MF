@@ -1,0 +1,71 @@
+Manifest-Version: 1.0
+Class-Path: mysql-connector-java-8.0.11.jar lib.zip xz-1.0.jar asm-3.1
+ .jar guice-3.0.jar avro-1.7.7.jar gson-2.2.4.jar junit-4.12.jar joni-
+ 2.1.11.jar jsch-0.1.54.jar xmlenc-0.52.jar guava-11.0.2.jar jets3t-0.
+ 9.0.jar jetty-6.1.26.jar paranamer-2.3.jar commons-io-2.5.jar hbase-i
+ t-2.1.3.jar httpcore-4.4.6.jar jettison-1.3.8.jar aopalliance-1.0.jar
+  commons-cli-1.2.jar commons-net-3.1.jar disruptor-3.3.6.jar jaxb-api
+ -2.2.12.jar jcodings-1.0.18.jar commons-lang-2.6.jar hbase-http-2.1.3
+ .jar hbase-rest-2.1.3.jar httpclient-4.5.3.jar jackson-xc-1.8.3.jar l
+ ibthrift-0.12.0.jar zookeeper-3.4.10.jar commons-lang3-3.6.jar guice-
+ servlet-3.0.jar hadoop-auth-2.7.7.jar hadoop-hdfs-2.7.7.jar hamcrest-
+ core-1.3.jar hbase-shell-2.1.3.jar hk2-api-2.5.0-b32.jar jaxb-impl-2.
+ 2.3-1.jar jetty-util-6.1.26.jar snappy-java-1.0.5.jar api-util-1.0.0-
+ M20.jar commons-codec-1.10.jar hbase-client-2.1.3.jar hbase-common-2.
+ 1.3.jar hbase-server-2.1.3.jar hbase-thrift-2.1.3.jar jackson-core-2.
+ 9.2.jar javax.el-3.0.1-b08.jar leveldbjni-all-1.8.jar metrics-core-3.
+ 2.1.jar commons-math3-3.6.1.jar hadoop-client-2.7.7.jar hadoop-common
+ -2.7.7.jar hbase-metrics-2.1.3.jar hbase-rsgroup-2.1.3.jar hk2-utils-
+ 2.5.0-b32.jar jackson-jaxrs-1.8.3.jar jamon-runtime-2.4.1.jar java-xm
+ lbuilder-0.4.jar javassist-3.20.0-GA.jar jersey-guava-2.25.1.jar prot
+ obuf-java-2.5.0.jar spymemcached-2.12.2.jar commons-crypto-1.0.0.jar 
+ commons-digester-1.8.jar curator-client-4.0.0.jar hbase-endpoint-2.1.
+ 3.jar hbase-examples-2.1.3.jar hbase-it-2.1.3-tests.jar hbase-protoco
+ l-2.1.3.jar jersey-client-2.25.1.jar jersey-common-2.25.1.jar jersey-
+ server-2.25.1.jar jetty-schemas-3.1.M0.jar commons-daemon-1.0.13.jar 
+ curator-recipes-4.0.0.jar hadoop-yarn-api-2.7.7.jar hbase-mapreduce-2
+ .1.3.jar hbase-procedure-2.1.3.jar hbase-zookeeper-2.1.3.jar hk2-loca
+ tor-2.5.0-b32.jar javax.ws.rs-api-2.0.1.jar api-asn1-api-1.0.0-M20.ja
+ r commons-compress-1.4.1.jar commons-httpclient-3.1.jar jackson-datab
+ ind-2.9.2.jar javax.inject-2.5.0-b32.jar jetty-sslengine-6.1.26.jar n
+ etty-all-4.0.23.Final.jar apacheds-i18n-2.0.0-M15.jar curator-framewo
+ rk-4.0.0.jar hadoop-hdfs-2.7.7-tests.jar hbase-annotations-2.1.3.jar 
+ hbase-metrics-api-2.1.3.jar hbase-replication-2.1.3.jar jackson-core-
+ asl-1.9.13.jar javax.servlet-api-3.1.0.jar javax.servlet.jsp-2.3.2.ja
+ r hadoop-annotations-2.7.7.jar hadoop-minicluster-2.7.7.jar hadoop-ya
+ rn-client-2.7.7.jar hadoop-yarn-common-2.7.7.jar hbase-common-2.1.3-t
+ ests.jar hbase-server-2.1.3-tests.jar hbase-shaded-netty-2.1.0.jar hb
+ ase-testing-util-2.1.3.jar jackson-jaxrs-base-2.9.2.jar javax.annotat
+ ion-api-1.2.jar jersey-media-jaxb-2.25.1.jar commons-collections-3.2.
+ 2.jar commons-configuration-1.6.jar hadoop-common-2.7.7-tests.jar hba
+ se-hadoop-compat-2.1.3.jar hbase-rsgroup-2.1.3-tests.jar jackson-anno
+ tations-2.9.2.jar jackson-mapper-asl-1.9.13.jar jetty-io-9.3.25.v2018
+ 0904.jar hbase-hadoop2-compat-2.1.3.jar jetty-jmx-9.3.25.v20180904.ja
+ r jetty-jsp-9.2.26.v20180806.jar jetty-xml-9.3.25.v20180904.jar valid
+ ation-api-1.1.0.Final.jar hbase-mapreduce-2.1.3-tests.jar hbase-proto
+ col-shaded-2.1.3.jar hbase-resource-bundle-2.1.3.jar hbase-shaded-pro
+ tobuf-2.1.0.jar hbase-zookeeper-2.1.3-tests.jar javax.servlet.jsp-api
+ -2.3.1.jar jetty-http-9.3.25.v20180904.jar jetty-util-9.3.25.v2018090
+ 4.jar osgi-resource-locator-1.0.1.jar commons-beanutils-core-1.8.0.ja
+ r javax.servlet.jsp.jstl-1.2.2.jar hbase-annotations-2.1.3-tests.jar 
+ jetty-server-9.3.25.v20180904.jar jetty-webapp-9.3.25.v20180904.jar j
+ etty-servlet-9.3.25.v20180904.jar hadoop-yarn-server-common-2.7.7.jar
+  hbase-external-blockcache-2.1.3.jar hbase-hadoop-compat-2.1.3-tests.
+ jar jetty-security-9.3.25.v20180904.jar aopalliance-repackaged-2.5.0-
+ b32.jar hadoop-mapreduce-client-hs-2.7.7.jar hbase-hadoop2-compat-2.1
+ .3-tests.jar hbase-shaded-miscellaneous-2.1.0.jar jetty-util-ajax-9.3
+ .25.v20180904.jar apacheds-kerberos-codec-2.0.0-M15.jar hadoop-mapred
+ uce-client-app-2.7.7.jar jackson-jaxrs-json-provider-2.9.2.jar hadoop
+ -mapreduce-client-core-2.7.7.jar hadoop-yarn-server-web-proxy-2.7.7.j
+ ar hadoop-mapreduce-client-common-2.7.7.jar hadoop-yarn-server-nodema
+ nager-2.7.7.jar hadoop-yarn-server-tests-2.7.7-tests.jar jersey-conta
+ iner-servlet-core-2.25.1.jar org.eclipse.jdt.core-3.8.2.v20130121.jar
+  hadoop-mapreduce-client-shuffle-2.7.7.jar jackson-module-jaxb-annota
+ tions-2.9.2.jar hadoop-mapreduce-client-jobclient-2.7.7.jar hadoop-ya
+ rn-server-resourcemanager-2.7.7.jar javax.servlet.jsp.jstl-1.2.0.v201
+ 105211821.jar hadoop-yarn-server-applicationhistoryservice-2.7.7.jar 
+ log4j-1.2.17.jar slf4j-api-1.7.25.jar commons-logging-1.2.jar audienc
+ e-annotations-0.5.0.jar findbugs-annotations-1.3.9-1.jar htrace-core-
+ 3.1.0-incubating.jar htrace-core4-4.2.0-incubating.jar
+Main-Class: demo.BulkLoadDemo
+

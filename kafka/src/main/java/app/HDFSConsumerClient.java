@@ -85,7 +85,7 @@ public class HDFSConsumerClient {
             /*插入hbase*/
             //获取FileSystem对象
             FileSystem fileSystem=FileSystem.get(conf);
-            //fileSystem.delete(new Path("/test/userBehaviors"),false);
+            fileSystem.delete(new Path("/test/userBehaviors"),false);
             FSDataOutputStream out = fileSystem.create(new Path("/test/userBehaviors"));
             PreparedStatement preparedStatement;
             int index=0;

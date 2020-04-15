@@ -30,11 +30,11 @@ public class HBaseConsumerClient {
             configuration = HBaseConfiguration.create();
             configuration.set("hbase.zookeeper.property.clientPort", "2181");
             //configuration.set("hbase.zookeeper.quorum", "172.31.42.237,172.31.43.12,172.31.43.21");
-            //configuration.set("hbase.zookeeper.quorum", "192.168.61.130,192.168.61.131,192.168.61.132");
-            configuration.set("hbase.zookeeper.quorum", "47.98.176.164,47.98.47.81,116.62.119.79");
+            configuration.set("hbase.zookeeper.quorum", "192.168.61.130,192.168.61.131,192.168.61.132");
+            //configuration.set("hbase.zookeeper.quorum", "47.98.176.164,47.98.47.81,116.62.119.79");
             //configuration.set("hbase.master", "172.31.42.237:60010");
-            //configuration.set("hbase.master", "192.168.61.130:60010");
-            configuration.set("hbase.master", "47.98.176.164:60010");
+            configuration.set("hbase.master", "192.168.61.130:60010");
+            //configuration.set("hbase.master", "47.98.176.164:60010");
             /*连接HBase*/
             Connection connection = ConnectionFactory.createConnection(configuration);
             Admin admin = connection.getAdmin();
@@ -68,12 +68,11 @@ public class HBaseConsumerClient {
             //驱动程序名，加载驱动前要先添加mysql连接器
             String driver = "com.mysql.cj.jdbc.Driver";//String driver = "com.mysql.jdbc.Driver";
             //URL指向要访问的数据库名
-            //String url = "jdbc:mysql://192.168.61.131:3306/mydb?serverTimezone=Asia/Shanghai";//连接指定数据库前先要创建此数据库："create database if not exists mydb;"。String url = "jdbc:mysql://172.31.43.13:3306/mydb"
-            String url = "jdbc:mysql://47.98.47.81:3306/mydb?serverTimezone=Asia/Shanghai";//连接指定数据库前先要创建此数据库："create database if not exists mydb;"。String url = "jdbc:mysql://172.31.43.13:3306/mydb"
+            String url = "jdbc:mysql://192.168.61.131:3306/mydb?serverTimezone=Asia/Shanghai";//连接指定数据库前先要创建此数据库："create database if not exists mydb;"。String url = "jdbc:mysql://172.31.43.13:3306/mydb"
+            //String url = "jdbc:mysql://47.98.47.81:3306/mydb?serverTimezone=Asia/Shanghai";//连接指定数据库前先要创建此数据库："create database if not exists mydb;"。String url = "jdbc:mysql://172.31.43.13:3306/mydb"
             //MySQL配置时的用户名
             String user = "root";
             //MySQL配置时的密码
-            //String password = "314159";
             String password = "fionasit61";
             Class.forName(driver);//加载驱动程序
             con = DriverManager.getConnection(url, user, password);
@@ -86,8 +85,8 @@ public class HBaseConsumerClient {
             AdminClient adminClient;
             properties = new Properties();
             //properties.put("bootstrap.servers", "172.31.42.237:9092,172.31.43.12:9092,172.31.43.21:9092");
-            //properties.put("bootstrap.servers", "192.168.61.130:9092,192.168.61.131:9092,192.168.61.132:9092");
-            properties.put("bootstrap.servers", "47.98.176.164:9092,47.98.47.81:9092,116.62.119.79:9092");
+            properties.put("bootstrap.servers", "192.168.61.130:9092,192.168.61.131:9092,192.168.61.132:9092");
+            //properties.put("bootstrap.servers", "47.98.176.164:9092,47.98.47.81:9092,116.62.119.79:9092");
             adminClient = AdminClient.create(properties);
             //删除topic
             List<String> topics=new ArrayList<String>();
@@ -102,8 +101,8 @@ public class HBaseConsumerClient {
             /*连接Kafka，启动消费者*/
             properties = new Properties();
             //properties.put("bootstrap.servers", "172.31.43.13:9092");//xxx是服务器集群的ip
-            //properties.put("bootstrap.servers", "192.168.61.132:9092");//xxx是服务器集群的ip
-            properties.put("bootstrap.servers", "47.98.176.164:9092");//xxx是服务器集群的ip
+            properties.put("bootstrap.servers", "192.168.61.132:9092");//xxx是服务器集群的ip
+            //properties.put("bootstrap.servers", "47.98.176.164:9092");//xxx是服务器集群的ip
             properties.put("group.id", "test-consumer-group");
             properties.put("enable.auto.commit", "true");
             properties.put("auto.commit.interval.ms", "1000");

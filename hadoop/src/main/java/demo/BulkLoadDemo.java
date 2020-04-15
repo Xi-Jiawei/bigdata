@@ -64,11 +64,11 @@ public class BulkLoadDemo {
         /*连接HBase*/
         configuration.set("hbase.zookeeper.property.clientPort", "2181");
         //configuration.set("hbase.zookeeper.quorum", "172.31.42.237,172.31.43.12,172.31.43.21");
-        //configuration.set("hbase.zookeeper.quorum", "192.168.61.130,192.168.61.131,192.168.61.132");
-        configuration.set("hbase.zookeeper.quorum", "47.98.176.164,47.98.47.81,116.62.119.79");
+        configuration.set("hbase.zookeeper.quorum", "192.168.61.130,192.168.61.131,192.168.61.132");
+        //configuration.set("hbase.zookeeper.quorum", "47.98.176.164,47.98.47.81,116.62.119.79");
         //configuration.set("hbase.master", "172.31.42.237:60010");
-        //configuration.set("hbase.master", "192.168.61.130:60010");
-        configuration.set("hbase.master", "47.98.176.164:60010");
+        configuration.set("hbase.master", "192.168.61.130:60010");
+        //configuration.set("hbase.master", "47.98.176.164:60010");
         Connection connection = ConnectionFactory.createConnection(configuration);
         Admin admin=connection.getAdmin();
         TableName tableName=TableName.valueOf("userBehaviors");
@@ -98,8 +98,8 @@ public class BulkLoadDemo {
 
         /*使用MapReduce生成HFile文件*/
         //配置yarn任务
-        //configuration.set("fs.defaultFS","hdfs://192.168.61.130:9000");
-        configuration.set("fs.defaultFS","hdfs://47.98.176.164:9000");
+        configuration.set("fs.defaultFS","hdfs://192.168.61.130:9000");
+        //configuration.set("fs.defaultFS","hdfs://47.98.176.164:9000");
         //FileSystem fileSystem= FileSystem.get(configuration);
         //fileSystem.delete(new Path("/test/experiment/userBehaviorsHFile"),true);
         Job job = Job.getInstance(configuration,"BulkLoadDemo");
